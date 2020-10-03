@@ -21,7 +21,7 @@ namespace Chadwick.Processor.Functions
         
         [FunctionName("RepoProcessor")]
         public async Task RunAsync(
-            [TimerTrigger("0 */5 * * * *", RunOnStartup = true)] TimerInfo myTimer,
+            [TimerTrigger("0 30 3 * * *", RunOnStartup = true)] TimerInfo myTimer,
             [Queue("commitsqueue"), StorageAccount("AzureWebJobsStorage")] ICollector<string> queue,
             ILogger log)
         {
