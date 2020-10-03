@@ -21,15 +21,18 @@ stages:
     displayName: Build
     pool:
       vmImage: $(vmImageName)
-
     steps:
+    - task: DotNetCoreCLI@2
+      inputs:
+        command: 'restore'
+        feedsToUse: 'select'
+        vstsFeed: '2d954ad5-bc4f-4b9c-b431-f866236fe7ff'
     - task: DotNetCoreCLI@2
       displayName: Build
       inputs:
         command: 'build'
-        projects: |
-          $(workingDirectory)/*.csproj
-        arguments: --output $(System.DefaultWorkingDirectory)/publish_output --configuration Release
+        projects: '$(workingDirectory)/*.csproj'
+        arguments: '--output $(System.DefaultWorkingDirectory)/publish_output --configuration Release --no-restore'
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
