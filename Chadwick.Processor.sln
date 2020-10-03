@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chadwick.Processor", "Chadwick.Processor\Chadwick.Processor.csproj", "{10061F34-6F14-4D72-AC85-5917E999A101}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10061F34-6F14-4D72-AC85-5917E999A101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10061F34-6F14-4D72-AC85-5917E999A101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10061F34-6F14-4D72-AC85-5917E999A101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10061F34-6F14-4D72-AC85-5917E999A101}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
