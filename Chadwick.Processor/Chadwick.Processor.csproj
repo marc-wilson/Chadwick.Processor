@@ -4,7 +4,7 @@
         <AzureFunctionsVersion>V3</AzureFunctionsVersion>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Chadwick.Database" Version="20200927.4.0" />
+        <PackageReference Include="Chadwick.Database" Version="20201017.3.0" />
         <PackageReference Include="CsvHelper" Version="15.0.6" />
         <PackageReference Include="EFCore.BulkExtensions" Version="3.2.3" />
         <PackageReference Include="Microsoft.Azure.Functions.Extensions" Version="1.1.0" />
