@@ -13,8 +13,9 @@ namespace Chadwick.Processor
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
+            
             builder.Services.AddDbContext<ChadwickDbContext>(options =>
-                options.UseSqlServer(Environment.GetEnvironmentVariable("ConnectionStrings:DefaultConnection")));
+                options.UseSqlServer(Environment.GetEnvironmentVariable("SQLConnectionString")));
             builder.Services.AddTransient(options => new GitHubClient(new ProductHeaderValue("chadwick.database")));
         }
     }

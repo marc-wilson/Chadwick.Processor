@@ -2,9 +2,7 @@
   "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "<Azure Storage Connection String>",
-    "FUNCTIONS_WORKER_RUNTIME": "dotnet"
-  },
-  "ConnectionStrings": {
-    "DefaultConnection": "<SQL Connection>"
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "SQLConnectionString": "<SQL Connection String>"
   }
 }
